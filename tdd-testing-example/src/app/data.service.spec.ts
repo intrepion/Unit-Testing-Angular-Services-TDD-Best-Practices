@@ -21,4 +21,8 @@
        const result = await service.getDataAsync().toPromise();
        expect(result).toBe(42);
      });
+
+     it('should be created', () => {
+       expect(service).toBeTruthy();
+     });
    });
