@@ -12,5 +12,8 @@
      it('should return data', () => {
        expect(service.getData()).toBeTruthy();
      });
+
+     it('should return 42 synchronously', () => {
+       expect(service.getDataSync()).toBe(42);
+     });
    });
-   

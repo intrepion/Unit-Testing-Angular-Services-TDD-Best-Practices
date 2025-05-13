@@ -8,4 +8,7 @@
      getData(): string {
        return 'Hello, World!';
      }
+     getDataSync(): number {
+       return 42;
+     }
    }
