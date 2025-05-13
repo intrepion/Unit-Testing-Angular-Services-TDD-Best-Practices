@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+// data.service.spec.ts
+   import { TestBed } from '@angular/core/testing';
+   import { DataService } from './data.service';
 
-import { DataService } from './data.service';
+   describe('DataService', () => {
+     let service: DataService;
+     beforeEach(() => {
+       TestBed.configureTestingModule({});
+       service = TestBed.inject(DataService);
+     });
 
-describe('DataService', () => {
-  let service: DataService;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(DataService);
-  });
-
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+     it('should return data', () => {
+       expect(service.getData()).toBeTruthy();
+     });
+   });
+   
