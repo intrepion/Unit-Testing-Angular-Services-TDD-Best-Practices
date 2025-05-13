@@ -16,4 +16,9 @@
      it('should return 42 synchronously', () => {
        expect(service.getDataSync()).toBe(42);
      });
+
+     it('should return 42 asynchronously', async () => {
+       const result = await service.getDataAsync().toPromise();
+       expect(result).toBe(42);
+     });
    });
